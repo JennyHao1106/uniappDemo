@@ -4,6 +4,9 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
+		<view v-for="(item,index) in 100" :key="index">
+			{{item}}
+		</view>
 	</view>
 </template>
 
@@ -17,8 +20,14 @@
 		onLoad() {
 
 		},
+		onPullDownRefresh(){
+			console.log('触发下拉刷新')
+		},
+		onReachBottom(){
+			console.log("onReachBottom")
+		},
 		methods: {
-
+		
 		}
 	}
 </script>

@@ -8,7 +8,7 @@
     "postcss": true
   },
   "compileType": "miniprogram",
-  "libVersion": "",
+  "libVersion": "2.9.2",
   "appid": "wx6623b184d078f309",
   "projectname": "demo1",
   "condition": {
