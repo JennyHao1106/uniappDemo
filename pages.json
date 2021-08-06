@@ -3,13 +3,37 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "HJY的第一个APP"
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/auth/login",
+			"style": {
+				"navigationBarTitleText": "登录"
 			}
 		},
 		{
 			"path": "pages/category/category",
 			"style": {
 				"navigationBarTitleText": "目录"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/question/question",
+			"style": {
+				"navigationBarTitleText": "答疑"
+			}
+		},
+		{
+			"path": "pages/article/article",
+			"style": {
+				"navigationBarTitleText": "文章"
 			}
 		}
 	],
@@ -22,5 +46,26 @@
 		"backgroundColorTop":"rgba(0,122,255,0.8)",
 		"backgroundColorBottom":"rgba(0,122,255,0.8)",
 		"backgroundTextStyle":"dark"
+	},
+	"tabBar":{
+		"backgroundColor":"#007AFF",
+		"color":"#EEEEEE",
+		"fontSize":"24",
+		"list":[{
+			"pagePath":"pages/index/index",
+			"text":"首页"
+		},{
+			"pagePath":"pages/category/category",
+			"text":"分类"
+		},{
+			"pagePath":"pages/article/article",
+			"text":"文章"
+		},{
+			"pagePath":"pages/question/question",
+			"text":"问答"
+		},{
+			"pagePath":"pages/my/my",
+			"text":"我的"
+		}]
 	}
 }

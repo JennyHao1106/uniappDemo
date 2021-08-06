@@ -1,6 +1,11 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/auth/login",
+    "pages/category/category",
+    "pages/my/my",
+    "pages/question/question",
+    "pages/article/article"
   ],
   "subPackages": [],
   "window": {
@@ -8,10 +13,36 @@
     "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#007AFF",
     "backgroundColor": "#DD524D",
-    "transparentTitle": "auto",
     "backgroundColorTop": "rgba(0,122,255,0.8)",
-    "backgroundColorBottom": "rgba(0,122,255,0.8)"
+    "backgroundColorBottom": "rgba(0,122,255,0.8)",
+    "backgroundTextStyle": "dark"
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap25.json"
+  "tabBar": {
+    "backgroundColor": "#007AFF",
+    "color": "#EEEEEE",
+    "fontSize": "24",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "文章"
+      },
+      {
+        "pagePath": "pages/question/question",
+        "text": "问答"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
 }

@@ -4,8 +4,8 @@
 		<view class="text-area">
 			<text class="title">{{title}}</text>
 		</view>
-		<view v-for="(item,index) in 100" :key="index">
-			{{item}}
+		<view>
+			<button type="default" @click="navTo">进入</button>
 		</view>
 	</view>
 </template>
@@ -27,7 +27,11 @@
 			console.log("onReachBottom")
 		},
 		methods: {
-		
+			navTo(){
+				uni.navigateTo({
+					url:'/pages/auth/login'
+				})
+			}
 		}
 	}
 </script>
